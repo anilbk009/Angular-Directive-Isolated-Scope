@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="myApp" ng-controller="CustomersController">
+{{customer }}<br/><br/>
+
+<div my-isolated-scope-with-name testabc="{{ customer }}"></div>
+<br/><br/>
+<div isolated-scope-with-model customerdata="customer"></div>
+<br/><br/>
+<div my-isolated-scope-with-model-and-function 
+     datasource="customer" 
+     action="changeData()">
+</div>
+
+
+
+<script src="https://code.angularjs.org/1.5.2/angular.min.js"></script>
+<script src="isolatedDirective.js.js"></script>
+
+</body>
+</html>
